@@ -1,0 +1,40 @@
+{{- $scr := .Page.Scratch -}}
+{{- if not ($scr.Get "gh_heatmap_css") -}}
+  {{- $scr.Set "gh_heatmap_css" true -}}
+  <style>
+    .gh-heat{ margin:.75rem 0; }
+    .gh-heat .ps{ white-space:pre; opacity:.9; margin-bottom:.35rem; }
+    .gh-grid{ display:flex; gap:2px; }
+    .gh-week{ display:flex; flex-direction:column; gap:2px; }
+    .gh-day{ width:11px; height:11px; border-radius:2px; background:#1f2a27; }
+    .gh-legend{ display:flex; align-items:center; gap:4px; opacity:.75; margin-top:.35rem; font-size:.9em; }
+    .gh-lg{ width:11px; height:11px; border-radius:2px; background:#1f2a27; }
+    .gh-lg1{ background:#0e4429; } .gh-lg2{ background:#006d32; }
+    .gh-lg3{ background:#26a641; } .gh-lg4{ background:#39d353; }
+  </style>
+{{- end -}}
+
+{{- $hm := site.Data.heatmap -}}
+{{- if $hm }}
+<div class="gh-heat">
+  <div class="ps">$ git log --heatmap ({{ $hm.totalContributions }} contributions)</div>
+  <div class="gh-grid">
+    {{- range $w := $hm.weeks -}}
+      <div class="gh-week">
+        {{- range $d := $w.days -}}
+          <div class="gh-day" title="{{ $d.date }} — {{ $d.count }} contributions" style="background: {{ $d.color | default "#1f2a27" }};"></div>
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+  <div class="gh-legend">
+    Less
+    <span class="gh-lg"></span>
+    <span class="gh-lg gh-lg1"></span>
+    <span class="gh-lg gh-lg2"></span>
+    <span class="gh-lg gh-lg3"></span>
+    <span class="gh-lg gh-lg4"></span>
+    More
+  </div>
+</div>
+{{- end -}}

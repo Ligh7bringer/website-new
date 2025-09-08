@@ -1,0 +1,147 @@
+[
+  {
+    "name": "C++",
+    "bytes": 15463160,
+    "percent": 39.87
+  },
+  {
+    "name": "HTML",
+    "bytes": 11122498,
+    "percent": 28.68
+  },
+  {
+    "name": "C",
+    "bytes": 5381893,
+    "percent": 13.88
+  },
+  {
+    "name": "COBOL",
+    "bytes": 2921725,
+    "percent": 7.53
+  },
+  {
+    "name": "Java",
+    "bytes": 710452,
+    "percent": 1.83
+  },
+  {
+    "name": "Python",
+    "bytes": 650665,
+    "percent": 1.68
+  },
+  {
+    "name": "TeX",
+    "bytes": 499200,
+    "percent": 1.29
+  },
+  {
+    "name": "JavaScript",
+    "bytes": 426128,
+    "percent": 1.1
+  },
+  {
+    "name": "CMake",
+    "bytes": 410090,
+    "percent": 1.06
+  },
+  {
+    "name": "C#",
+    "bytes": 351693,
+    "percent": 0.91
+  },
+  {
+    "name": "Objective-C",
+    "bytes": 286685,
+    "percent": 0.74
+  },
+  {
+    "name": "CSS",
+    "bytes": 162139,
+    "percent": 0.42
+  },
+  {
+    "name": "Rich Text Format",
+    "bytes": 90888,
+    "percent": 0.23
+  },
+  {
+    "name": "PHP",
+    "bytes": 57734,
+    "percent": 0.15
+  },
+  {
+    "name": "GLSL",
+    "bytes": 57478,
+    "percent": 0.15
+  },
+  {
+    "name": "Shell",
+    "bytes": 43420,
+    "percent": 0.11
+  },
+  {
+    "name": "Objective-C++",
+    "bytes": 29142,
+    "percent": 0.08
+  },
+  {
+    "name": "M4",
+    "bytes": 19093,
+    "percent": 0.05
+  },
+  {
+    "name": "Ada",
+    "bytes": 14749,
+    "percent": 0.04
+  },
+  {
+    "name": "Vim Script",
+    "bytes": 14370,
+    "percent": 0.04
+  },
+  {
+    "name": "Pascal",
+    "bytes": 13551,
+    "percent": 0.03
+  },
+  {
+    "name": "Cuda",
+    "bytes": 11886,
+    "percent": 0.03
+  },
+  {
+    "name": "Makefile",
+    "bytes": 11237,
+    "percent": 0.03
+  },
+  {
+    "name": "SWIG",
+    "bytes": 10585,
+    "percent": 0.03
+  },
+  {
+    "name": "Inno Setup",
+    "bytes": 8501,
+    "percent": 0.02
+  },
+  {
+    "name": "Batchfile",
+    "bytes": 8314,
+    "percent": 0.02
+  },
+  {
+    "name": "Haskell",
+    "bytes": 5387,
+    "percent": 0.01
+  },
+  {
+    "name": "GDB",
+    "bytes": 1750,
+    "percent": 0.0
+  },
+  {
+    "name": "ASP",
+    "bytes": 103,
+    "percent": 0.0
+  }
+]

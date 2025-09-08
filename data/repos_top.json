@@ -1,0 +1,622 @@
+[
+  {
+    "name": "RenderEngineCpp",
+    "nameWithOwner": "Ligh7bringer/RenderEngineCpp",
+    "description": "An OpenGL Render Engine based on ThinMatrix's youtube series but done in C++ instead of Java!",
+    "url": "https://github.com/Ligh7bringer/RenderEngineCpp",
+    "stargazerCount": 7,
+    "forkCount": 1,
+    "updatedAt": "2025-09-08T21:24:31Z",
+    "primaryLanguage": {
+      "name": "C++",
+      "color": "#f34b7d"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 185122,
+          "node": {
+            "name": "C++",
+            "color": "#f34b7d"
+          }
+        },
+        {
+          "size": 17703,
+          "node": {
+            "name": "GLSL",
+            "color": "#5686a5"
+          }
+        },
+        {
+          "size": 2578,
+          "node": {
+            "name": "CMake",
+            "color": "#DA3434"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "opengl"
+          }
+        },
+        {
+          "topic": {
+            "name": "render-engine"
+          }
+        },
+        {
+          "topic": {
+            "name": "glsl"
+          }
+        },
+        {
+          "topic": {
+            "name": "game-engine"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Nbody-parallel",
+    "nameWithOwner": "Ligh7bringer/Nbody-parallel",
+    "description": "A parallel n-body simulation with CUDA, OpenMP and MPI.",
+    "url": "https://github.com/Ligh7bringer/Nbody-parallel",
+    "stargazerCount": 5,
+    "forkCount": 4,
+    "updatedAt": "2024-05-22T19:31:54Z",
+    "primaryLanguage": {
+      "name": "C++",
+      "color": "#f34b7d"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 47513,
+          "node": {
+            "name": "C++",
+            "color": "#f34b7d"
+          }
+        },
+        {
+          "size": 22438,
+          "node": {
+            "name": "TeX",
+            "color": "#3D6117"
+          }
+        },
+        {
+          "size": 6873,
+          "node": {
+            "name": "Cuda",
+            "color": "#3A4E3A"
+          }
+        },
+        {
+          "size": 2858,
+          "node": {
+            "name": "CMake",
+            "color": "#DA3434"
+          }
+        },
+        {
+          "size": 193,
+          "node": {
+            "name": "Batchfile",
+            "color": "#C1F12E"
+          }
+        },
+        {
+          "size": 20,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "parallelisation"
+          }
+        },
+        {
+          "topic": {
+            "name": "openmp"
+          }
+        },
+        {
+          "topic": {
+            "name": "mpi"
+          }
+        },
+        {
+          "topic": {
+            "name": "cuda"
+          }
+        },
+        {
+          "topic": {
+            "name": "n-body"
+          }
+        },
+        {
+          "topic": {
+            "name": "sfml"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Spell-Knight",
+    "nameWithOwner": "Ligh7bringer/Spell-Knight",
+    "description": "SpellKnight: a 2D platformer written in C++ using SFML and box2d. Coursework for Games Engineering.",
+    "url": "https://github.com/Ligh7bringer/Spell-Knight",
+    "stargazerCount": 3,
+    "forkCount": 3,
+    "updatedAt": "2023-01-24T21:29:41Z",
+    "primaryLanguage": {
+      "name": "C++",
+      "color": "#f34b7d"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 202463,
+          "node": {
+            "name": "C++",
+            "color": "#f34b7d"
+          }
+        },
+        {
+          "size": 8571,
+          "node": {
+            "name": "CMake",
+            "color": "#DA3434"
+          }
+        },
+        {
+          "size": 403,
+          "node": {
+            "name": "C",
+            "color": "#555555"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "sfml-game"
+          }
+        },
+        {
+          "topic": {
+            "name": "platformer"
+          }
+        },
+        {
+          "topic": {
+            "name": "game"
+          }
+        },
+        {
+          "topic": {
+            "name": "game-engine"
+          }
+        },
+        {
+          "topic": {
+            "name": "sfml"
+          }
+        },
+        {
+          "topic": {
+            "name": "box2d"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Chatbot",
+    "nameWithOwner": "Ligh7bringer/Chatbot",
+    "description": "My Honours project: a chatbot which can answer programming questions to help students.",
+    "url": "https://github.com/Ligh7bringer/Chatbot",
+    "stargazerCount": 2,
+    "forkCount": 0,
+    "updatedAt": "2023-08-03T20:16:26Z",
+    "primaryLanguage": {
+      "name": "Python",
+      "color": "#3572A5"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 52580,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 28621,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 10107,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        },
+        {
+          "size": 6522,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "flask-application"
+          }
+        },
+        {
+          "topic": {
+            "name": "chatbot"
+          }
+        },
+        {
+          "topic": {
+            "name": "nlp"
+          }
+        },
+        {
+          "topic": {
+            "name": "education"
+          }
+        },
+        {
+          "topic": {
+            "name": "machine-learning"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Checkers",
+    "nameWithOwner": "Ligh7bringer/Checkers",
+    "description": "A 2D Checkers game written in Java using Swing for the GUI. Coursework for Algorithms & Data Structures.",
+    "url": "https://github.com/Ligh7bringer/Checkers",
+    "stargazerCount": 2,
+    "forkCount": 0,
+    "updatedAt": "2025-08-27T12:14:23Z",
+    "primaryLanguage": {
+      "name": "Java",
+      "color": "#b07219"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 67702,
+          "node": {
+            "name": "Java",
+            "color": "#b07219"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "checkers-game"
+          }
+        },
+        {
+          "topic": {
+            "name": "draughts"
+          }
+        },
+        {
+          "topic": {
+            "name": "checkers"
+          }
+        },
+        {
+          "topic": {
+            "name": "java-swing-game"
+          }
+        },
+        {
+          "topic": {
+            "name": "gui"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dissertation",
+    "nameWithOwner": "Ligh7bringer/Dissertation",
+    "description": "My honours dissertation. Topic: Application of Chatbots in Education.",
+    "url": "https://github.com/Ligh7bringer/Dissertation",
+    "stargazerCount": 1,
+    "forkCount": 0,
+    "updatedAt": "2024-07-14T04:42:31Z",
+    "primaryLanguage": {
+      "name": "TeX",
+      "color": "#3D6117"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 392490,
+          "node": {
+            "name": "TeX",
+            "color": "#3D6117"
+          }
+        },
+        {
+          "size": 1820,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 144,
+          "node": {
+            "name": "Shell",
+            "color": "#89e051"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "dissertation"
+          }
+        },
+        {
+          "topic": {
+            "name": "education"
+          }
+        },
+        {
+          "topic": {
+            "name": "nlp"
+          }
+        },
+        {
+          "topic": {
+            "name": "ai"
+          }
+        },
+        {
+          "topic": {
+            "name": "chatbot"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Hazel",
+    "nameWithOwner": "Ligh7bringer/Hazel",
+    "description": "Hazel Engine",
+    "url": "https://github.com/Ligh7bringer/Hazel",
+    "stargazerCount": 1,
+    "forkCount": 0,
+    "updatedAt": "2021-10-04T20:38:37Z",
+    "primaryLanguage": {
+      "name": "C++",
+      "color": "#f34b7d"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 193609,
+          "node": {
+            "name": "C++",
+            "color": "#f34b7d"
+          }
+        },
+        {
+          "size": 5352,
+          "node": {
+            "name": "GLSL",
+            "color": "#5686a5"
+          }
+        },
+        {
+          "size": 4441,
+          "node": {
+            "name": "CMake",
+            "color": "#DA3434"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": []
+    }
+  },
+  {
+    "name": "StudentFinancing",
+    "nameWithOwner": "Ligh7bringer/StudentFinancing",
+    "description": "Napier Hackathon 2018 Student financing app which won 1st place.",
+    "url": "https://github.com/Ligh7bringer/StudentFinancing",
+    "stargazerCount": 1,
+    "forkCount": 1,
+    "updatedAt": "2024-12-24T21:21:41Z",
+    "primaryLanguage": {
+      "name": "Java",
+      "color": "#b07219"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 27757,
+          "node": {
+            "name": "Java",
+            "color": "#b07219"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": [
+        {
+          "topic": {
+            "name": "finance-application"
+          }
+        },
+        {
+          "topic": {
+            "name": "finance-management"
+          }
+        },
+        {
+          "topic": {
+            "name": "android-app"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "AndroidTestGame",
+    "nameWithOwner": "Ligh7bringer/AndroidTestGame",
+    "description": null,
+    "url": "https://github.com/Ligh7bringer/AndroidTestGame",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "updatedAt": "2017-03-17T18:08:49Z",
+    "primaryLanguage": {
+      "name": "Java",
+      "color": "#b07219"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 19762,
+          "node": {
+            "name": "Java",
+            "color": "#b07219"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": []
+    }
+  },
+  {
+    "name": "Arduino-Communication",
+    "nameWithOwner": "Ligh7bringer/Arduino-Communication",
+    "description": "Communication between an Arduino and a Web Server written in Java.",
+    "url": "https://github.com/Ligh7bringer/Arduino-Communication",
+    "stargazerCount": 0,
+    "forkCount": 1,
+    "updatedAt": "2018-10-07T15:07:02Z",
+    "primaryLanguage": {
+      "name": "Java",
+      "color": "#b07219"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 11021,
+          "node": {
+            "name": "Java",
+            "color": "#b07219"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": []
+    }
+  },
+  {
+    "name": "CarCrimeCity",
+    "nameWithOwner": "Ligh7bringer/CarCrimeCity",
+    "description": null,
+    "url": "https://github.com/Ligh7bringer/CarCrimeCity",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "updatedAt": "2019-07-30T10:14:36Z",
+    "primaryLanguage": {
+      "name": "C++",
+      "color": "#f34b7d"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 172088,
+          "node": {
+            "name": "C++",
+            "color": "#f34b7d"
+          }
+        },
+        {
+          "size": 1721,
+          "node": {
+            "name": "CMake",
+            "color": "#DA3434"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": []
+    }
+  },
+  {
+    "name": "EL-Messaging",
+    "nameWithOwner": "Ligh7bringer/EL-Messaging",
+    "description": "A message processing system.",
+    "url": "https://github.com/Ligh7bringer/EL-Messaging",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "updatedAt": "2018-10-17T11:18:56Z",
+    "primaryLanguage": {
+      "name": "C#",
+      "color": "#178600"
+    },
+    "languages": {
+      "edges": [
+        {
+          "size": 85255,
+          "node": {
+            "name": "C#",
+            "color": "#178600"
+          }
+        }
+      ]
+    },
+    "repositoryTopics": {
+      "nodes": []
+    }
+  }
+]

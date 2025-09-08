@@ -1,0 +1,31 @@
+{{- $scr := .Page.Scratch -}}
+{{- if not ($scr.Get "gh_langs_css") -}}
+  {{- $scr.Set "gh_langs_css" true -}}
+  <style>
+    .gh-langs{ margin:.75rem 0; }
+    .gh-langs .ps{ white-space:pre; opacity:.9; }
+    .gh-bar{ margin:.22rem 0; background:color-mix(in oklab,currentColor,transparent 92%); }
+    .gh-fill{ padding:.18rem .4rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .gh-right{ opacity:.75; margin-left:.6ch; }
+  </style>
+{{- end -}}
+
+{{- $limit := .Get "limit" | default 6 | int -}}
+{{- $data := site.Data.languages -}}
+{{- if $data }}
+  {{- $slice := first $limit $data -}}
+  {{- $max := 0 -}}
+  {{- range $slice }}{{- if gt .used $max -}}{{- $max = .used -}}{{- end -}}{{- end -}}
+  <div class="gh-langs">
+    <div class="ps">$ gh lang --repos</div>
+    {{- range $i, $it := $slice -}}
+      {{- $w := div (mul $it.used 100) (cond (eq $max 0) 1 $max) -}}
+      <div class="gh-bar">
+        <div class="gh-fill" style="width: {{ $w }}%;">
+          <strong>{{ $it.name }}</strong>
+          <span class="gh-right">{{ $it.used }} repo{{ if ne $it.used 1 }}s{{ end }}</span>
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}

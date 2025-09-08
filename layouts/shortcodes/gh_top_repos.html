@@ -1,0 +1,31 @@
+{{- $scr := .Page.Scratch -}}
+{{- if not ($scr.Get "gh_top_repos_css") -}}
+  {{- $scr.Set "gh_top_repos_css" true -}}
+  <style>
+    .gh-top { margin:.5rem 0; }
+    .gh-top .ps { white-space:pre; opacity:.9; }
+    .gh-top ul { list-style:none; padding:0; margin:.35rem 0 0; }
+    .gh-top li { margin:.2rem 0; }
+    .gh-top .meta { opacity:.75; }
+  </style>
+{{- end -}}
+
+{{- $limit := .Get "limit" | default 6 | int -}}
+{{- $repos := site.Data.repos_top -}}
+{{- if $repos }}
+  {{- $slice := first $limit $repos -}}
+  <div class="gh-top">
+    <div class="ps">$ ls repos/  (top by ★)</div>
+    <ul>
+      {{- range $i, $r := $slice -}}
+        {{- $branch := cond (eq (add $i 1) (len $slice)) "└──" "├──" -}}
+        <li>
+          <span style="opacity:.75">{{ $branch }}</span>
+          <a href="{{ $r.url }}" target="_blank" rel="noopener">{{ $r.name }}</a>
+          <span class="meta"> — ★ {{ $r.stargazerCount }} · ↺ {{ $r.forkCount }}{{ with $r.primaryLanguage }} · {{ .name }}{{ end }}</span>
+          {{ with $r.description }}<div class="meta">{{ . }}</div>{{ end }}
+        </li>
+      {{- end -}}
+    </ul>
+  </div>
+{{- end -}}

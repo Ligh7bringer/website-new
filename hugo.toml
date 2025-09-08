@@ -20,15 +20,19 @@ unsafe = true
   # Nav bar
   [[params.navlinks]]
   name = "about/"
-  url = "about/"
+  url = "/about"
+
+  [[params.navlinks]]
+  name = "projects/"
+  url = "/projects"
 
   [[params.navlinks]]
   name = "posts/"
-  url = "posts/"
+  url = "/posts"
   
   [[params.navlinks]]
   name = "contact/"
-  url = "contact/"
+  url = "/contact"
 
   # Social Links
   [[params.socialLinks]]
