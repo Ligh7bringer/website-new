@@ -1,6 +1,6 @@
 {{ define "main" }}
 $ command not found: <span id="badpath"></span>
-<p><a href="{{ " /" | relURL }}">(home)</a></p>
+<p><a href="{{ "/" | relURL }}">(home)</a></p>
 
 {{ $basePath := (urls.Parse .Site.BaseURL).Path }}
 
