@@ -1,4 +1,4 @@
-baseurl = "https://sgeor.netlify.app/"
+baseurl = "https://sgeor.dev/"
 title = "sgeor"
 theme = "console"
 languageCode = "en-gb"
