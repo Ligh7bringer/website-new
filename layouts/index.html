@@ -17,12 +17,12 @@
   {{ else }}
     {{ with site.Params.home.aboutText }}
       {{ . | markdownify }}
-    {{ else }}
+      {{ else }}
       <p>Welcome to my site.</p>
+      {{ end }}
     {{ end }}
-  {{ end }}
-  {{ with $aboutLink }}<p><a href="{{ . }}">{{ $aboutMore }}</a></p>{{ end }}
-</div>
+    {{ with $aboutLink }}<p><a href="{{ . }}">{{ $aboutMore }}</a></p>{{ end }}
+    </div>
 
 {{ partial "console_social.html" . }}
 
