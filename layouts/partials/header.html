@@ -1,0 +1,19 @@
+{{- $accent := site.Params.accent.dark | default "#22c55e" -}}
+
+<script>
+try{
+  document.documentElement.removeAttribute('data-theme');
+  localStorage.removeItem('theme');
+}catch(_){}
+</script>
+
+<style>
+:root{
+  --primary-color: {{ site.Params.accent.dark | default "#22c55e" }};
+  --bg:#0b1210; --fg:#e6f1ed; --muted:#93a39b; --border:#1c2a25;
+}
+body.terminal{ background:var(--bg)!important; color:var(--fg)!important; }
+a{ color:var(--primary-color)!important; }
+hr,.post,.card,pre,code,blockquote{ border-color:var(--border)!important; }
+pre,code{ background: color-mix(in oklab,var(--bg),white 8%); }
+</style>

@@ -1,0 +1,29 @@
+{{- /* yearsSince shortcode
+     Params:
+       start     : Start date (YYYY-MM-DD), e.g. 2019-09-01
+       mode      : "completed" (default) or "decimal"
+       precision : Digits after decimal (for mode=decimal; default 1)
+       suffix    : Optional text to append (e.g., " years")
+*/ -}}
+{{- $startStr := .Get "start" | default "2019-09-01" -}}
+{{- $mode     := .Get "mode" | default "completed" -}}
+{{- $prec     := (.Get "precision" | default "1") | int -}}
+{{- $suffix   := .Get "suffix" | default "" -}}
+
+{{- $start := time $startStr -}}
+{{- $now := now -}}
+
+{{- if eq $mode "decimal" -}}
+  {{- $seconds := sub ($now.Unix) ($start.Unix) -}}
+  {{- $years := div (float $seconds) 31557600.0 -}} {{/* 365.25 days */}}
+  {{- printf "%.*f%s" $prec $years $suffix -}}
+{{- else -}}
+  {{- /* Completed calendar years without int-casting "MMDD" (avoids octal issue) */ -}}
+  {{- $yNow    := dateFormat "2006" $now -}}
+  {{- $yStart  := dateFormat "2006" $start -}}
+  {{- $yearDiff := sub (int $yNow) (int $yStart) -}}
+  {{- $annivStr := printf "%s-%s-%s" $yNow (dateFormat "01" $start) (dateFormat "02" $start) -}}
+  {{- $anniv := time $annivStr -}}
+  {{- $completed := cond (ge $now $anniv) $yearDiff (sub $yearDiff 1) -}}
+  {{- printf "%d%s" $completed $suffix -}}
+{{- end -}}

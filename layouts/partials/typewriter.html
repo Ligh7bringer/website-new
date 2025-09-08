@@ -1,0 +1,92 @@
+{{/* layouts/partials/typewriter.html */}}
+{{- $scr := .Scratch -}}
+{{- if not ($scr.Get "typewriterLoaded") -}}
+  {{- $scr.Set "typewriterLoaded" true -}}
+  <style>
+    .js-typewriter {
+        display: inline-block;    /* stays inline with headings if needed */
+        max-width: 100%;          /* never exceed container width */
+        white-space: pre-wrap;    /* preserve \n and allow wrapping */
+        overflow-wrap: anywhere;  /* wrap long tokens/URLs */
+        word-break: break-word;   /* extra safety for older engines */
+        font-variant-ligatures: none;
+    }
+    .tw-cursor {
+        display: inline-block;
+        width: 0;
+        border-right: .12em currentColor solid;
+        margin-left: .06em;
+        animation: tw-blink .8s steps(1, end) infinite;
+    }
+    .tw-cursor--char { border: 0; width: auto; margin-left: 0; }
+    @keyframes tw-blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .tw-cursor { animation: none; } }
+  </style>
+
+
+<script>
+(() => {
+  // Run on first load and also when page is restored from bfcache
+  const hook = (fn) => {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn, { once: true });
+    } else {
+      fn();
+    }
+    // Re-run when coming back/forward from history (bfcache)
+    window.addEventListener('pageshow', fn);
+  };
+
+  const typeAll = () => {
+    const reduce =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.querySelectorAll('.js-typewriter').forEach((el) => {
+      const speed = Number(el.dataset.speed || 28);
+      const startDelay = Number(el.dataset.start || 300);
+      const cursorChar = el.dataset.cursor || '';
+      const keepCursor = (el.dataset.keepCursor ?? 'true') !== 'false';
+
+      // Save original text once; use it every time we (re)type
+      const original = el.dataset.twOriginal ?? (el.textContent || '');
+      el.dataset.twOriginal = original;
+
+      // Bump a generation id so any stale timers from a prior run no-op
+      const gen = ((+el.dataset.twGen || 0) + 1).toString();
+      el.dataset.twGen = gen;
+
+      // Reset element & cursor
+      el.textContent = '';
+      const cursor = document.createElement('span');
+      cursor.className = 'tw-cursor';
+      if (cursorChar) {
+        cursor.classList.add('tw-cursor--char');
+        cursor.textContent = cursorChar;
+      }
+      el.appendChild(cursor);
+
+      if (reduce) {
+        // Respect reduced motion: just show text
+        el.textContent = original;
+        if (!keepCursor && cursor.parentNode) cursor.remove();
+        return;
+      }
+
+      let i = 0;
+      const step = () => {
+        if (el.dataset.twGen !== gen) return; // aborted by a new run
+        if (i < original.length) {
+          cursor.insertAdjacentText('beforebegin', original[i++]);
+          setTimeout(step, speed);
+        } else {
+          if (!keepCursor && cursor.parentNode) cursor.remove();
+        }
+      };
+      setTimeout(step, startDelay);
+    });
+  };
+
+  hook(typeAll);
+})();
+</script>
+{{- end -}}

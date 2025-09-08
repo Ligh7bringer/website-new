@@ -1,0 +1,73 @@
+{{- /* Console-style social links (single line, no bullets) */ -}}
+{{- $raw := .Site.Params.socialLinks -}}
+{{- if $raw -}}
+  {{- $items := slice -}}
+  {{- $t := printf "%T" $raw -}}
+
+  {{- /* Map form: [params.socialLinks] github="..." */ -}}
+  {{- if eq $t "map[string]interface {}" -}}
+    {{- range $k, $v := $raw -}}
+      {{- if eq (printf "%T" $v) "string" -}}
+        {{- $items = $items | append (dict "name" $k "url" (printf "%v" $v)) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- /* Array form: items may be strings, {name,url}, or tables with multiple k:v */ -}}
+    {{- range $raw -}}
+      {{- $itType := printf "%T" . -}}
+      {{- if eq $itType "string" -}}
+        {{- $u := . -}}
+        {{- $items = $items | append (dict "name" $u "url" $u) -}}
+      {{- else if eq $itType "map[string]interface {}" -}}
+        {{- $name := "" -}}
+        {{- $url  := "" -}}
+        {{- with index . "name" }} {{- $name = printf "%v" . -}} {{- end -}}
+        {{- with or (index . "url") (index . "href") }} {{- $url = printf "%v" . -}} {{- end -}}
+        {{- if and (ne $name "") (ne $url "") -}}
+          {{- $items = $items | append (dict "name" $name "url" $url) -}}
+        {{- else -}}
+          {{- range $k, $v := . -}}
+            {{- if eq (printf "%T" $v) "string" -}}
+              {{- $items = $items | append (dict "name" $k "url" $v) -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $filtered := where $items "url" "ne" "" -}}
+  {{- $sorted := sort $filtered "name" -}}
+  {{- $n := len $sorted -}}
+
+  {{- if gt $n 0 -}}
+    <style>
+      .console-social .ps { white-space: pre; }
+      .console-social .row { display:block; margin:.15rem 0; }
+      .console-social .branch { opacity:.75; }
+      .console-social .name { font-weight:600; }
+      .console-social .arrow { opacity:.6; margin:0 .5ch; }
+      .console-social a { text-decoration:none; border-bottom:1px dashed currentColor; }
+      .console-social a:hover { border-bottom-style:solid; }
+    </style>
+
+    <div class="console-social">
+      <div class="ps">$ ls social/</div>
+      <div class="rows">
+        {{- range $i, $it := $sorted -}}
+          {{- $branch := cond (eq (add $i 1) $n) "└──" "├──" -}}
+          {{- $pretty := $it.url
+              | replaceRE "^https?://(www\\.)?" ""
+              | replaceRE "^mailto:" ""
+              | replaceRE "/$" "" -}}
+          <div class="row">
+            <span class="branch">{{ $branch }}</span>
+            <span class="name">{{ $it.name }}</span>
+            <span class="arrow">-&gt;</span>
+            <a href="{{ $it.url }}" target="_blank" rel="noopener">{{ $pretty }}</a>
+          </div>
+        {{- end -}}
+      </div>
+    </div>
+  {{- end -}}
+{{- end -}}

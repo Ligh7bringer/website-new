@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Date | time.Format ":date_medium" }}
+{{ with .Params.linkedin }}
+    // <a href="{{ . }}">Linkedin</a>
+{{ end }}
+{{ with .Params.twitter }}
+    // <a href="{{ . }}">Twitter</a>
+{{ end }}
+<br/><br/>
+{{ .Content }}
+  <a class="text-decoration-none" href="{{ .CurrentSection.RelPermalink }}">
+    (back)
+  </a>
+{{ template "_internal/disqus.html" . }}
+{{ end }}

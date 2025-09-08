@@ -1,0 +1,41 @@
+baseurl = "https://sgeor.netlify.app/"
+title = "sgeor"
+theme = "console"
+languageCode = "en-gb"
+enableInlineShortcodes = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting = true
+
+  # Set the animation style -- https://animate.style/
+  # To disable animations, please remove or comment animationStyle parameter
+  animateStyle = "animated zoomIn fast" 
+
+  name = "Svetlozar Georgiev"
+
+  # Nav bar
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
+  
+  [[params.navlinks]]
+  name = "contact/"
+  url = "contact/"
+
+  # Social Links
+  [[params.socialLinks]]
+  github   = "https://github.com/Ligh7bringer"
+  linkedin = "https://www.linkedin.com/in/sgeor255"
+  email    = "mailto:s.georgiev255@gmail.com"
+
+  [params.accent]
+  light = "#2588baff"
+  dark  = "#22c55e"

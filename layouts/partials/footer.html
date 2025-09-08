@@ -1,0 +1,9 @@
+<div class="footer">
+    {{ with .Site.Params.copyright }}
+      {{ . | markdownify }}
+    {{ else }}
+    © 2019 - {{ now.Format "2006" }} {{ .Site.Params.name }}.
+    {{ end }}
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>

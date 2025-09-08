@@ -1,0 +1,43 @@
+{{- /* googleform shortcode
+     Usage:
+       {{< googleform id="1FAIpQLSeEXAMPLE..." height="1600" title="Contact form" >}}
+       {{< googleform src="https://docs.google.com/forms/d/e/1FAIpQLSeEXAMPLE.../viewform?embedded=true" >}}
+     Params:
+       id      : Google Form ID (from the /forms/d/e/<ID>/ URL)
+       src     : Full embed URL (overrides id)
+       title   : Accessible title for the iframe (default: "Google Form")
+       width   : CSS width (default: "100%")
+       height  : Height in pixels (default: "1200")
+       border  : CSS border (default: "0")
+       loading : lazy|eager (default: "lazy")
+       referrer: Referrer policy (default: "no-referrer-when-downgrade")
+*/ -}}
+{{- $id       := .Get "id" -}}
+{{- $srcParam := or (.Get "src") (.Get "url") -}}
+{{- $src      := $srcParam -}}
+{{- if and (not $src) $id -}}
+  {{- $src = printf "https://docs.google.com/forms/d/e/%s/viewform?embedded=true" $id -}}
+{{- end -}}
+{{- $title    := .Get "title"    | default "Google Form" -}}
+{{- $width    := .Get "width"    | default "100%" -}}
+{{- $height   := .Get "height"   | default "1200" -}}
+{{- $border   := .Get "border"   | default "0" -}}
+{{- $loading  := .Get "loading"  | default "lazy" -}}
+{{- $referrer := .Get "referrer" | default "no-referrer-when-downgrade" -}}
+
+{{- if not $src -}}
+  <!-- missing 'id' or 'src' -->
+{{- else -}}
+  <div class="google-form-embed" style="width:100%;max-width:100%;">
+    <iframe
+      src="{{ $src | safeURL }}"
+      title="{{ $title }}"
+      style="width:{{ $width }}; height:{{ $height }}px; border:{{ $border }};"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      loading="{{ $loading }}"
+      referrerpolicy="{{ $referrer }}"
+      >Loading…</iframe>
+  </div>
+{{- end -}}
