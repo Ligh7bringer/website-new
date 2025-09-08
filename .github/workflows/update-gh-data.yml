@@ -1,0 +1,50 @@
+name: Update GitHub data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mondays 07:00 Europe/London
+    - cron: "15 06 * * 1"
+
+concurrency:
+  group: gh-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write 
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run generator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/github_stats.py
+
+      - name: Commit changes (if any)
+        run: |
+          if ! git diff --quiet -- data/; then
+            git config user.name  "${GITHUB_ACTOR}"
+            git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+            git add data/
+            git commit -m "workflow: update GitHub stats"
+            git push
+          else
+            echo "No changes to commit."
+          fi

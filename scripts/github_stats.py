@@ -10,7 +10,11 @@ USERNAME = "Ligh7bringer"
 try:
     from TOKEN import bearer_token
 except Exception as e:
-    sys.exit(f"Failed to import TOKEN.bearer_token: {e}")
+    import os, sys
+    print(f"Failed to import TOKEN.bearer_token: {e}. Trying env var...")
+    bearer_token = os.getenv("GITHUB_TOKEN") or os.getenv("GH_GRAPHQL_PAT") or ""
+    if not bearer_token:
+      sys.exit("Missing GITHUB_TOKEN (or GH_GRAPHQL_PAT)")
 
 def _normalize_token(tok):
     if not tok:
