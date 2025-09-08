@@ -14,6 +14,35 @@ try{
 }
 body.terminal{ background:var(--bg)!important; color:var(--fg)!important; }
 a{ color:var(--primary-color)!important; }
+.terminal a:hover,
+.terminal a:focus{
+  color: var(--link-hover) !important;
+  text-decoration-color: var(--link-hover);
+}
 hr,.post,.card,pre,code,blockquote{ border-color:var(--border)!important; }
 pre,code{ background: color-mix(in oklab,var(--bg),white 8%); }
+
+@font-face{
+  font-family: "PixelCode";
+  src:
+    url({{ "/PixelCode.woff2?v=1" | relURL }}) format("woff2"),
+    url({{ "/PixelCode.ttf?v=1"   | relURL }}) format("truetype");
+  font-weight: normal;   /* IMPORTANT: use normal if your TTF isn’t variable */
+  font-style: normal;
+  font-display: swap;
+  font-synthesis: none;  /* don’t fake bold/italic */
+}
+
+.terminal-logo .logo a.no-style{ display:inline !important; }
+
+:root { --logo-font-size: 1.2rem; } /* tweak */
+.terminal-logo .logo a.no-style.site-name,
+.terminal-logo .logo a.no-style{
+  font-family: "PixelCode", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace !important;
+  font-size: var(--logo-font-size) !important;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+}
 </style>

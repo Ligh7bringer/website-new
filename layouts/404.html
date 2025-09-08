@@ -1,0 +1,19 @@
+{{ define "main" }}
+$ command not found: <span id="badpath"></span>
+<p><a href="{{ " /" | relURL }}">(home)</a></p>
+
+{{ $basePath := (urls.Parse .Site.BaseURL).Path }}
+
+<script>
+    (function () {
+        var base = {{ $basePath | jsonify
+    }} || "/";
+    var p = window.location.pathname || "/";
+    // Strip base path if the site is served from a subfolder
+    if (base !== "/" && p.startsWith(base)) p = p.slice(base.length);
+    // Trim leading slashes and decode
+    p = decodeURIComponent(p.replace(/^\/+/, ""));
+    document.getElementById("badpath").textContent = p || "(root)";
+  }) ();
+</script>
+{{ end }}
