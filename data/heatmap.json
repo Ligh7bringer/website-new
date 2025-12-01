@@ -1,53 +1,6 @@
 {
-  "totalContributions": 70,
+  "totalContributions": 75,
   "weeks": [
-    {
-      "firstDay": "2024-11-24",
-      "days": [
-        {
-          "date": "2024-11-24",
-          "count": 0,
-          "weekday": 0,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2024-11-25",
-          "count": 0,
-          "weekday": 1,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2024-11-26",
-          "count": 0,
-          "weekday": 2,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2024-11-27",
-          "count": 0,
-          "weekday": 3,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2024-11-28",
-          "count": 0,
-          "weekday": 4,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2024-11-29",
-          "count": 0,
-          "weekday": 5,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2024-11-30",
-          "count": 0,
-          "weekday": 6,
-          "color": "#ebedf0"
-        }
-      ]
-    },
     {
       "firstDay": "2024-12-01",
       "days": [
@@ -2456,6 +2409,53 @@
         },
         {
           "date": "2025-11-24",
+          "count": 1,
+          "weekday": 1,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2025-11-25",
+          "count": 1,
+          "weekday": 2,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2025-11-26",
+          "count": 0,
+          "weekday": 3,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2025-11-27",
+          "count": 2,
+          "weekday": 4,
+          "color": "#40c463"
+        },
+        {
+          "date": "2025-11-28",
+          "count": 1,
+          "weekday": 5,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2025-11-29",
+          "count": 0,
+          "weekday": 6,
+          "color": "#ebedf0"
+        }
+      ]
+    },
+    {
+      "firstDay": "2025-11-30",
+      "days": [
+        {
+          "date": "2025-11-30",
+          "count": 0,
+          "weekday": 0,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2025-12-01",
           "count": 0,
           "weekday": 1,
           "color": "#ebedf0"
@@ -2463,5 +2463,5 @@
       ]
     }
   ],
-  "totalCommitContributions": 27
+  "totalCommitContributions": 28
 }
