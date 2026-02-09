@@ -66,9 +66,9 @@
     "nameWithOwner": "Ligh7bringer/Nbody-parallel",
     "description": "A parallel n-body simulation with CUDA, OpenMP and MPI.",
     "url": "https://github.com/Ligh7bringer/Nbody-parallel",
-    "stargazerCount": 6,
+    "stargazerCount": 5,
     "forkCount": 4,
-    "updatedAt": "2025-12-19T09:40:17Z",
+    "updatedAt": "2026-02-07T05:31:59Z",
     "primaryLanguage": {
       "name": "C++",
       "color": "#f34b7d"
