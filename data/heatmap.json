@@ -1,53 +1,6 @@
 {
-  "totalContributions": 120,
+  "totalContributions": 121,
   "weeks": [
-    {
-      "firstDay": "2025-06-01",
-      "days": [
-        {
-          "date": "2025-06-01",
-          "count": 0,
-          "weekday": 0,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-06-02",
-          "count": 0,
-          "weekday": 1,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-06-03",
-          "count": 0,
-          "weekday": 2,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-06-04",
-          "count": 0,
-          "weekday": 3,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-06-05",
-          "count": 0,
-          "weekday": 4,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-06-06",
-          "count": 0,
-          "weekday": 5,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-06-07",
-          "count": 0,
-          "weekday": 6,
-          "color": "#ebedf0"
-        }
-      ]
-    },
     {
       "firstDay": "2025-06-08",
       "days": [
@@ -2456,6 +2409,53 @@
         },
         {
           "date": "2026-06-01",
+          "count": 1,
+          "weekday": 1,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2026-06-02",
+          "count": 0,
+          "weekday": 2,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-06-03",
+          "count": 0,
+          "weekday": 3,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-06-04",
+          "count": 0,
+          "weekday": 4,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-06-05",
+          "count": 0,
+          "weekday": 5,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-06-06",
+          "count": 0,
+          "weekday": 6,
+          "color": "#ebedf0"
+        }
+      ]
+    },
+    {
+      "firstDay": "2026-06-07",
+      "days": [
+        {
+          "date": "2026-06-07",
+          "count": 0,
+          "weekday": 0,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-06-08",
           "count": 0,
           "weekday": 1,
           "color": "#ebedf0"
@@ -2463,5 +2463,5 @@
       ]
     }
   ],
-  "totalCommitContributions": 59
+  "totalCommitContributions": 60
 }
