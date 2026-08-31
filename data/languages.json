@@ -16,11 +16,11 @@
     "used": 8
   },
   {
-    "name": "C",
-    "used": 7
+    "name": "Shell",
+    "used": 8
   },
   {
-    "name": "Shell",
+    "name": "C",
     "used": 7
   },
   {
@@ -89,6 +89,10 @@
   },
   {
     "name": "Inno Setup",
+    "used": 1
+  },
+  {
+    "name": "Luau",
     "used": 1
   },
   {

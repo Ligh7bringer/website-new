@@ -2,12 +2,12 @@
   {
     "name": "C++",
     "bytes": 15463160,
-    "percent": 39.86
+    "percent": 39.84
   },
   {
     "name": "HTML",
     "bytes": 11127499,
-    "percent": 28.68
+    "percent": 28.67
   },
   {
     "name": "C",
@@ -76,7 +76,7 @@
   },
   {
     "name": "Shell",
-    "bytes": 43766,
+    "bytes": 44498,
     "percent": 0.11
   },
   {
@@ -102,6 +102,11 @@
   {
     "name": "Pascal",
     "bytes": 13551,
+    "percent": 0.03
+  },
+  {
+    "name": "Luau",
+    "bytes": 12871,
     "percent": 0.03
   },
   {
