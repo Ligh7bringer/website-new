@@ -76,8 +76,8 @@
   },
   {
     "name": "Shell",
-    "bytes": 44498,
-    "percent": 0.11
+    "bytes": 45090,
+    "percent": 0.12
   },
   {
     "name": "Objective-C++",
@@ -87,6 +87,11 @@
   {
     "name": "M4",
     "bytes": 19093,
+    "percent": 0.05
+  },
+  {
+    "name": "Luau",
+    "bytes": 17641,
     "percent": 0.05
   },
   {
@@ -102,11 +107,6 @@
   {
     "name": "Pascal",
     "bytes": 13551,
-    "percent": 0.03
-  },
-  {
-    "name": "Luau",
-    "bytes": 12871,
     "percent": 0.03
   },
   {
