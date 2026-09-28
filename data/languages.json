@@ -12,15 +12,15 @@
     "used": 9
   },
   {
+    "name": "C",
+    "used": 8
+  },
+  {
     "name": "Python",
     "used": 8
   },
   {
     "name": "Shell",
-    "used": 8
-  },
-  {
-    "name": "C",
     "used": 7
   },
   {
@@ -80,10 +80,6 @@
     "used": 1
   },
   {
-    "name": "GDB",
-    "used": 1
-  },
-  {
     "name": "Haskell",
     "used": 1
   },
@@ -113,10 +109,6 @@
   },
   {
     "name": "SWIG",
-    "used": 1
-  },
-  {
-    "name": "Vim Script",
     "used": 1
   }
 ]
