@@ -1,53 +1,6 @@
 {
-  "totalContributions": 153,
+  "totalContributions": 163,
   "weeks": [
-    {
-      "firstDay": "2025-09-28",
-      "days": [
-        {
-          "date": "2025-09-28",
-          "count": 0,
-          "weekday": 0,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-09-29",
-          "count": 1,
-          "weekday": 1,
-          "color": "#9be9a8"
-        },
-        {
-          "date": "2025-09-30",
-          "count": 0,
-          "weekday": 2,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-01",
-          "count": 0,
-          "weekday": 3,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-02",
-          "count": 0,
-          "weekday": 4,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-03",
-          "count": 0,
-          "weekday": 5,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-04",
-          "count": 0,
-          "weekday": 6,
-          "color": "#ebedf0"
-        }
-      ]
-    },
     {
       "firstDay": "2025-10-05",
       "days": [
@@ -2456,7 +2409,54 @@
         },
         {
           "date": "2026-09-28",
+          "count": 4,
+          "weekday": 1,
+          "color": "#40c463"
+        },
+        {
+          "date": "2026-09-29",
           "count": 2,
+          "weekday": 2,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2026-09-30",
+          "count": 2,
+          "weekday": 3,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2026-10-01",
+          "count": 2,
+          "weekday": 4,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2026-10-02",
+          "count": 1,
+          "weekday": 5,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2026-10-03",
+          "count": 0,
+          "weekday": 6,
+          "color": "#ebedf0"
+        }
+      ]
+    },
+    {
+      "firstDay": "2026-10-04",
+      "days": [
+        {
+          "date": "2026-10-04",
+          "count": 1,
+          "weekday": 0,
+          "color": "#9be9a8"
+        },
+        {
+          "date": "2026-10-05",
+          "count": 1,
           "weekday": 1,
           "color": "#9be9a8"
         }
