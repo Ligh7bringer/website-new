@@ -1,53 +1,6 @@
 {
-  "totalContributions": 163,
+  "totalContributions": 175,
   "weeks": [
-    {
-      "firstDay": "2025-10-05",
-      "days": [
-        {
-          "date": "2025-10-05",
-          "count": 0,
-          "weekday": 0,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-06",
-          "count": 1,
-          "weekday": 1,
-          "color": "#9be9a8"
-        },
-        {
-          "date": "2025-10-07",
-          "count": 0,
-          "weekday": 2,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-08",
-          "count": 0,
-          "weekday": 3,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-09",
-          "count": 0,
-          "weekday": 4,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-10",
-          "count": 0,
-          "weekday": 5,
-          "color": "#ebedf0"
-        },
-        {
-          "date": "2025-10-11",
-          "count": 0,
-          "weekday": 6,
-          "color": "#ebedf0"
-        }
-      ]
-    },
     {
       "firstDay": "2025-10-12",
       "days": [
@@ -2456,9 +2409,56 @@
         },
         {
           "date": "2026-10-05",
-          "count": 1,
+          "count": 3,
           "weekday": 1,
-          "color": "#9be9a8"
+          "color": "#40c463"
+        },
+        {
+          "date": "2026-10-06",
+          "count": 3,
+          "weekday": 2,
+          "color": "#40c463"
+        },
+        {
+          "date": "2026-10-07",
+          "count": 5,
+          "weekday": 3,
+          "color": "#30a14e"
+        },
+        {
+          "date": "2026-10-08",
+          "count": 3,
+          "weekday": 4,
+          "color": "#40c463"
+        },
+        {
+          "date": "2026-10-09",
+          "count": 0,
+          "weekday": 5,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-10-10",
+          "count": 0,
+          "weekday": 6,
+          "color": "#ebedf0"
+        }
+      ]
+    },
+    {
+      "firstDay": "2026-10-11",
+      "days": [
+        {
+          "date": "2026-10-11",
+          "count": 0,
+          "weekday": 0,
+          "color": "#ebedf0"
+        },
+        {
+          "date": "2026-10-12",
+          "count": 0,
+          "weekday": 1,
+          "color": "#ebedf0"
         }
       ]
     }
